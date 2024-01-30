@@ -5,17 +5,16 @@ import "./home.css";
 
 function Home() {
   const navigate = useNavigate();
-  const [selectedNavItem, setSelectedNavItem] = useState(""); // State to track the selected navigation item
+  const [selectedNavItem, setSelectedNavItem] = useState("");
 
-  // Function to handle click on navigation items
   const handleNavItemClick = (route) => {
-    navigate(route); // Navigate to the specified route
-    setSelectedNavItem(route); // Update the selected navigation item
+    navigate(route);
+    setSelectedNavItem(route);
   };
 
   useEffect(() => {
     navigate("/dashboard");
-    setSelectedNavItem("/dashboard"); // Initially set the selected navigation item to '/dashboard'
+    setSelectedNavItem("/dashboard");
   }, []);
 
   return (
