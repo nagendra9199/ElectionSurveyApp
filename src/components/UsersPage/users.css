@@ -1,0 +1,25 @@
+.users-white-back-ground-container{
+    background-color: white;
+    width: 100%;
+    height: 38vw;
+    z-index: 1;
+    border-radius: 1vw;
+    position: relative;
+    box-shadow: 1px 1px 10px rgb(165, 165, 165);
+}
+.users-dashboard-details-container{
+    width: 79vw;
+    margin-left: 2vw;
+    position: relative;
+    margin-top: 1vw;
+}
+
+
+@media (max-width:768px){
+    .users-dashboard-details-container{
+        width: 98%;
+    }
+    .users-white-back-ground-container{
+        height: 100%;
+    }
+}
